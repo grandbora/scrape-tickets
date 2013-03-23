@@ -4,7 +4,7 @@ require 'json'
 
 event_data = []
 
-for page in 1..1 # loop end limit can be increase manually or can be scraped from the page
+for page in 1..100 # loop end limit can be increased manually or can be scraped from the page
 
   puts 'PAGE ::::::::' + page.to_s
   doc = Nokogiri::HTML(open('http://www.wegottickets.com/searchresults/page/' + page.to_s + '/all'))
